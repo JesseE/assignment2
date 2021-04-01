@@ -1,0 +1,18 @@
+.image__src {
+  width: 100%;
+  max-width: 320px;
+  object-fit: cover;
+}
+
+.image--page-header {
+  & .image__src {
+    object-fit: contain;
+    width: 100%;
+    max-width: 480px;
+    padding: 0 40px;
+
+    @media (min-width: $breakpoint-l) {
+      max-width: 100%;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import './variables.scss';
+
+@import '../components/faq/Faq.scss';
+@import '../components/image/Image.scss';
+@import '../components/pageHeader/PageHeader.scss';
+@import '../components/modal/Modal.scss';
+@import '../components/button/Button.scss';
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: $helvetica;
+}
+
+a {
+  color: unset;
+  text-decoration: unset;
+}

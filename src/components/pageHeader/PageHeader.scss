@@ -1,0 +1,133 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: $light-grey;
+}
+
+.page-header__top-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+  width: 100%;
+  background-color: $dark-red;
+}
+
+.page-header__text {
+  color: $white;
+  font-size: $font-size-xs;
+  font-family: $helvetica;
+}
+
+.page-header__text--bold {
+  font-weight: $font-weight-bold;
+}
+
+.page-header__text--large {
+  font-size: $font-size-ml;
+}
+
+.page-header__image-container {
+  display: flex;
+  align-items: center;
+  margin: 0 auto 30px;
+}
+
+.page-header__image-container--desktop {
+  display: none;
+
+  @media (min-width: $breakpoint-l) {
+    order: 4;
+    display: flex;
+  }
+}
+
+.page-header__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 0;
+  padding: 0 10px;
+  text-align: center;
+
+  @media (min-width: $breakpoint-l) {
+    order: 2;
+    width: 100%;
+    max-width: 500px;
+    padding: 0;
+  }
+}
+
+.page-header__title {
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: $dark-grey;
+  font-size: $font-size-l;
+  font-weight: normal;
+
+  @media (min-width: $breakpoint-xl) {
+    font-size: $font-size-xl;
+  }
+}
+
+.page-header__title--bold {
+  font-weight: $font-weight-bold;
+}
+
+.page-header-buttons {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+
+  @media (min-width: $breakpoint-l) {
+    display: none;
+    flex-direction: row;
+    order: 2;
+  }
+}
+
+.page-header-buttons--desktop {
+  display: none;
+
+  @media (min-width: $breakpoint-m) {
+    margin-top: 25px;
+
+    & .button {
+      margin: 20px 0px auto;
+    }
+
+    & .button:first-of-type {
+      margin-right: 20px;
+    }
+  }
+
+  @media (min-width: $breakpoint-l) {
+    display: flex;
+    max-width: 450px;
+    width: 100%;
+  }
+
+  @media (min-width: $breakpoint-xl) {
+    & .button {
+      margin: 20px 0px auto;
+    }
+
+  }
+}
+
+.page-header__content {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  margin: 0 auto 40px;
+
+  @media (min-width: $breakpoint-l) {
+    flex-direction: row;
+    padding: 75px 0;
+  }
+}
